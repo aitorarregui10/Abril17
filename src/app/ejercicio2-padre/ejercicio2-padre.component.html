@@ -1,0 +1,12 @@
+
+
+<h1>Lista de nuestros productos</h1>
+<app-ejercicio2-hijo (productoSeleccionado)="agregarProducto($event)"></app-ejercicio2-hijo>
+
+
+<h2>Productos seleccionados:</h2>
+<ul>
+    <li @for (producto of productosSeleccionados; track producto){
+     {{ producto }}}></li>
+</ul>
+
