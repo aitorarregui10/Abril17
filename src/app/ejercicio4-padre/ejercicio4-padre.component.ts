@@ -1,12 +1,18 @@
 import { Component } from '@angular/core';
 import { Ejercicio4HijoComponent } from '../ejercicio4-hijo/ejercicio4-hijo.component';
-import { Persona } from '../Persona';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
  
+
+export interface Persona{
+  nombre: string;
+  edad:number;
+} 
+
 @Component({
   selector: 'app-ejercicio4-padre',
   standalone: true,
-  imports: [Ejercicio4HijoComponent, CommonModule],
+  imports: [Ejercicio4HijoComponent, CommonModule,RouterModule],
   templateUrl: './ejercicio4-padre.component.html',
   styleUrl: './ejercicio4-padre.component.css'
 })
